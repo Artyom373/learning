@@ -34,3 +34,16 @@ for key in user:
 user = {"name": "Mark", "phone": "+79518746317", "age": 23, "height": 182, "weight": 87}
 for key in user:
  print(user[key])
+
+# Перебор вложенных словарей
+users = {
+ "Mark": {"phone": "+79518746317", "age": 23, "height": 182, "weight": 87},
+ "Anna": {"phone": "+79518746317", "age": 23, "height": 182, "weight": 87},
+ "Oleg": {"phone": "+79518746317", "age": 23, "height": 182, "weight": 87},
+ "Alex": {"phone": "+79518746317", "age": 23, "height": 182, "weight": 87},
+}
+for user_key in users:
+ print()
+ print("name: " + user_key)
+ for user_attribute in users[user_key]:
+print(user_attribute + ": " + str(users[user_key][user_attribute]))
