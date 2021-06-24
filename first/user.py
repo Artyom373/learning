@@ -6,3 +6,4 @@ def auth(login, password):
 
 def block(login):
  return "Пользователь заблокирован"
+

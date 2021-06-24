@@ -46,7 +46,7 @@ for user_key in users:
  print()
  print("name: " + user_key)
  for user_attribute in users[user_key]:
-print(user_attribute + ": " + str(users[user_key][user_attribute]))
+    print(user_attribute + ": " + str(users[user_key][user_attribute]))
 
 # Номер итерации в цикле for
 users = ["Mark", "Anna", "Oleg", "Alex"]
