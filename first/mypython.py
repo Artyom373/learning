@@ -52,3 +52,28 @@ for user_key in users:
 users = ["Mark", "Anna", "Oleg", "Alex"]
 for index, user in enumerate(users):
  print(str(index) +": " + user)
+
+user = {"name": "Mark", "phone": "+795999568", "age": 25}
+for key in user:
+    print(key + ":" + str(user[key]))
+
+print("Конец программы")
+
+for key in user:
+    try:
+        print(key + ": " + user[key])
+    except TypeError as exception:
+        print(key + ": ", exception)
+
+print("Конец программы")
+
+
+user = {"name": "Mark", "phone": "+79507864598", "age": 25}
+for key in user:
+ try:
+    print(key + ": " + user[key])
+ except:
+    print(key + ": ", "Ошибка!")
+ finally:
+    print("Этот блок сработает в любом случае")
+    print("Конец программы")
