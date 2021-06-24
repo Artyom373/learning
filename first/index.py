@@ -1,6 +1,6 @@
 # file: index.py
-import user
+import user as user_account
 
-user.new("Artyom", "fdsf7dsf")
-user.auth("Artyom", "fdsf7dsf")
-user.block("Artyom")
+user_account.new("Artyom", "fdsf7dsf")
+user_account.auth("Artyom", "fdsf7dsf")
+user_account.block("Artyom")
