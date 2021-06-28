@@ -77,3 +77,46 @@ for key in user:
  finally:
     print("Этот блок сработает в любом случае")
     print("Конец программы")
+
+# Форматирование через индексы
+ref_link = "http://partner-cash.nu/ref/{ref_id}".format(ref_id=2194)
+print(ref_link)
+
+ref_link = "http://partner-cash.nu/ref/{0}".format(2194)
+print(ref_link)
+
+ref_link = "http://partner-cash.nu/{0}/{1}".format("mark", 2194)
+print(ref_link)
+
+word = "Строка"
+glue = " / "
+join_word = glue.join(word)
+print(join_word)
+# С / т / р / о / к / а
+
+words = ["Раз", "Два", "Три", "Четыре", "Пять"]
+glue = " / "
+join_word = glue.join(words)
+print(join_word)
+# Раз / Два / Три / Четыре / Пять
+
+words = "Lorem ipsum dolor sit amet consectetur adipiscing elit"
+words_list = words.split(" ")
+print(words_list)
+# ['Lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur', 'adipiscing', 'elit']
+
+words = "Lorem ipsum dolor sit amet consectetur adipiscing elit"
+words_list = words.split(" ", 3)
+print(words_list)
+# ['Lorem', 'ipsum', 'dolor', 'sit amet consectetur adipiscing elit']
+
+num = "https://vk.com/id329483294"
+is_vk_link = num.startswith("https://vk.com/id")
+print(is_vk_link)
+# True
+
+story = "- Гуси-Гуси? \n-Га-га-га!"
+dystopia = story.replace("Гуси", "Человеко", 1)
+print(dystopia)
+# - Человеко-Гуси? -Га-га-га!
+
